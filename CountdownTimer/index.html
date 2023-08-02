@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width:100%; margin:0px; padding:0;"> <!--중앙 정렬-->
+    <div id="countdownTimer" style="text-align:center; margin:100px;">
+        <div id="show-before">
+            <input id="time-insert-hour" type="number" placeholder="0" value="0" min="0" max="24">
+            <input id="time-insert-min" type="number" placeholder="0" value="0" min="0" max="60">
+            <input id="time-insert-sec" type="number" placeholder="0" value="0" min="0" max="60">
+        </div>
+        <!--start 누르기 전 숫자 입력 받기-->
+        <div id="show-time">00:00:00</div>
+        <!--start 누른 후 화면 표시-->
+    
+        <div id="btns"> <!--가로로 정렬 필요함-->
+            <button id="start" onclick="clickBtns('start')">START</button>
+            <button id="stop" onclick="clickBtns('stop')">STOP</button>
+            <button id="reset" onclick="clickBtns('reset')">RESET</button>
+        </div>
+    </div>
+    
+    <script src="clock.js"></script>
+</body>
+</html>
