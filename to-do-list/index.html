@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">TO-DO LIST</div>
+        <div id="input">
+            <div id="content">
+                <input type="text" id="to-do">
+            </div>
+            
+            <select id="priority">
+                <option value="낮음">낮음</option>
+                <option value="보통">보통</option>
+                <option value="높음">높음</option>
+                <option value="아주 높음">아주 높음</option>
+            </select>
+            <div id="add" onclick="addTask()">추가</div>
+        </div>
+        <hr>
+        <ul id="show"> <!--사이즈 정해놓고, 스크롤로 더 보이게 만들기-->
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
