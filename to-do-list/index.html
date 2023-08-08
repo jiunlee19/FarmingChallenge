@@ -11,11 +11,12 @@
         <div id="title">TO-DO LIST</div>
         <div id="input">
             <div id="content">
-                <input type="text" id="to-do">
+                <input type="checkbox" id="DON"><!--DON = Done Or Not-->
+                <input type="text" id="to-do" placeholder="할 일을 입력하세요">
             </div>
             
             <select id="priority">
-                <option value="낮음">낮음</option>
+                <option value="낮음" selected>낮음</option>
                 <option value="보통">보통</option>
                 <option value="높음">높음</option>
                 <option value="아주 높음">아주 높음</option>
@@ -23,10 +24,17 @@
             <div id="add" onclick="addTask()">추가</div>
         </div>
         <hr>
+        <div id="sort" style="padding: 8px;">
+            <button id="all" onclick="taskAll()">전체</button>
+            <button id="Done" onclick="taskDone()">완료</button>
+            <button id="notDone" onclick="taskNotDone()">미완료</button>
+        </div>
+        <hr>
         <ul id="show"> <!--사이즈 정해놓고, 스크롤로 더 보이게 만들기-->
 
         </ul>
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>

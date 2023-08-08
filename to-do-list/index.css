@@ -23,7 +23,7 @@ text-align: center;
 #input > div{
     display: inline-block; 
 }
-ul {
+ul, p {
     margin: 0;
     padding: 0;
 }
@@ -35,4 +35,8 @@ li {
 
 p, input, select {
     display: inline-block;
+}
+
+#options {
+    padding: 8px;
 }
