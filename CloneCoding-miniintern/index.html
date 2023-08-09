@@ -4,52 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+
+    <title>Clone Coding</title>
 </head>
 <body>
-    <div id="menu">
-        <div id="main-menu">
-            <ul>
-                <li><a href="#">미니인턴</a></li>
-                <li><a href="#">스킬업</a></li>
-                <li><a href="#">M클래스</a></li>
-                <li><a href="#">채용관</a></li>
-                <li><a href="#">해피폴리오</a></li>
-              </ul>
-        </div>
-        <div id="sub-menu">
-            <li><a href="#" id="align-right">서비스 소개</a></li>
-            <li><a href="#" id="align-right">회원가입</a></li>
-            <li><a href="#" id="align-right">로그인</a></li>
-            <li><a href="#" id="align-right">기업회원</a></li>
-        </div>    
+    <div class="header">
+        메뉴바
     </div>
-    
-    <div id="contents">
-        <div id="banner">
-            <div id="banner1">
-                
-                <img id="banner-img1" src="https://miniintern.com/static/images/main/main_img_1_M.webp" alt="배너이미지" >
-                <div id="title">최대한의 효율로 <br>직무경험을 쌓아보세요</div>
-                <div id="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="118" height="8"></svg>
-                    회원가입하기
-                </div>
-                
+    <div class="content">
+        <div class="banner">
+            
+            <div class="banner1" href="/login">
+                <div class="text-wrap">
+                    <div class="main-text">최대한의 효율로<br>직무경험을 쌓아보세요</div>
+                    <div class="sub-text">2주만에 실무 경험을 만드는, 미니인턴</div>
+                    <span>회원가입하러 가기</span>
+                </div>  
             </div>
-            <div id="banner2">
-                <img id="banner-img2" src="https://miniintern.com/static/images/main/main_img_r_1.webp" alt="배너이미지">
-                <div id="title">미니인턴?<br>미니인턴!</div>
-                
-                <div id="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="118" height="8"></svg>
-                    서비스 더 알아보기
+            
+            <!--이미지 슬라이드-->
+            <div class="img_slider">
+                <div class="img_wrap">
+                    <ul class="slider">
+                        <li>
+                            <img src="./images/horizontal_image.jpg">
+                            <span>미니인턴?<br>미니인턴!</span>
+                            <span>서비스 더 알아보기</span>
+                        </li>
+                        <li>
+                            <img src="./images/square_image.jpg">
+                            <span>미니인턴을 앱처럼<br>사용해보세요</span>
+                            <span>서비스 더 알아보기</span>
+                        </li>
+                    </ul>
                 </div>
-            </div> 
+                <div class="controller">
+                    <a href="" class="prev">◀</a>
+                    <a href="" class="next">▶</a>
+                </div>
+            </div>
+            <!--이미지 슬라이드-->
         </div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+        <div class="content5"></div>
     </div>
-    <div id="footer">
-        Footer
+    <div class="footer">
+        푸터
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

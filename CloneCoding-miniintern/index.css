@@ -1,74 +1,114 @@
 * {
     margin: 0;
     padding: 0;
-}
-body {
-    width: 100%;
-    
+
     font-family: "Noto Sans", "Noto Sans KR", sans-serif;
-    line-height: 1.5;
 }
-div#menu {
-    display: f;
+
+li {
+    list-style: none;
 }
-ul {
-    display: inline-block;
+
+/*banner*/
+.banner{
+    width: calc(100vw - 40px);
+    margin: 20px;
+}
+.banner div {
+    border-radius: 5px;
+}
+.banner1 {
+    width: calc(100% - 32px);
+    height: 284px; /*300px-16px*/
+    margin-bottom: 20px;
+    padding: 20px 16px;
+
+    position: relative;
+
+    background-color: coral;
+}
+
+.text-wrap {
+    width: 100%;
+    height: calc(100% - 20px);
     position: absolute;
 }
-div#sub-menu {
-    float: right;
+.text-wrap div {
+    margin-bottom: 20px;
+}
+.text-wrap .main-text {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+.sub_text {
+    font-size: 20px;
+}
+.text-wrap span {
+    font-size: 14px;
+
+    position: absolute;
+    bottom: 20px;
+}
+/*이미지 슬라이드*/
+/*carousel 요소*/
+.img_slider {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
 }
 
-#banner {
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    width: 936px;
-    height: 500px;
+/*images*/
+.img_wrap {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.slider { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider li{
+    float: left;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+}
+.slider li img{
+    width: calc(100vw - 40px);
+    min-height: 100%;
+}
+.slider li span{
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+}
+
+/*controller*/
+.controller {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 300px;
+
     display: flex;
     justify-content: space-between;
-    font-size: 0.875rem;
+    align-items: center;
 }
+.controller a {
+    padding: 30px;
 
-#banner1, #banner2 {
-    display: relative;
-}
-
-img {
-    border-radius: 5px;
-    width:100%;
-    min-height:100%;
-    object-fit:cover;
-    
-    
-}
-#banner-img1 {
-    width: 616px;
-    height: 400px;
-    overflow: hidden;
-    float: left;
-}
-#banner-img2 {
-    width: 296px;
-    height: 400px;
-    overflow: hidden;
-    float: right;
-    
-}
-
-#title, #button {
-    display: absolute;
+    text-decoration-line: none;
     color: white;
-    font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0 8px;
+    text-shadow: 2px 2px 2px grey;
 }
-
-#title {
-    font-size: 2em;
-}
-
-#button {
-    text-align: right;
-    font-size: 0.875rem;
-}
+/*이미지 슬라이드*/
