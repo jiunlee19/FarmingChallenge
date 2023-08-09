@@ -90,8 +90,7 @@ li {
 }
 .slider li span{
     position: absolute;
-    z-index: 1000;
-    text-align: center;
+    
 }
 
 /*controller*/
